@@ -1,0 +1,19 @@
+server :
+  port : 42308
+  ssl:
+    enabled: false
+    key-store: "keystore:pkcs12"
+    key-store-password: ezip
+    keyStoreType: PKCS12
+
+aws :
+  dynamodb :
+    table : video_conversions
+
+google:
+  pubsub:
+    project : videoconvertering3
+    topic : tpconverter
+
+
+
